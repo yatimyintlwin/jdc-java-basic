@@ -10,7 +10,7 @@ class Data {
 		return value;
 	}
 
-	// public string toString() {
-	// 	return "Data(%s)";
-	// }
+	public string toString() {
+		return "Data(%s)".formatted(value);
+	}
 }
