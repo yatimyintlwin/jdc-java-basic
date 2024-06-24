@@ -3,8 +3,16 @@ enum Days {
 }
 
 String getDayType(Days day) {
+
 	return switch (day) {
-	case MON, TUE, WED, THU, FRI -> result = "Week Day";
+	case MON, TUE, WED, THU, FRI -> {
+		switch(day) {
+		case MON -> System.out.println("First Week Day");
+		case FRI -> System.out.println("Last Week Day");
+		}
+
+		yield "Week Day";
+	}
 	default -> "Week End";
 	};
 }
