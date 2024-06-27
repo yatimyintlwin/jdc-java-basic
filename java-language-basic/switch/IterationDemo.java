@@ -11,3 +11,27 @@ int sum(int ... array) {
 
 	return result;
 }
+
+int sumWithFor(int ... array) {
+
+	var result = 0;
+
+	for(var i = array.length - 1; i >= 0; i--) {
+		System.out.println("Counter is %d".formatted(i));
+		System.out.println("Element is %d".formatted(array[i]));
+		result += array[i];
+		System.out.println("Result is %d".formatted(result));
+	}
+
+	return result;
+}
+
+int sumWithEach(int ... array) {
+	var result = 0;
+
+	for(var element : array) {
+		result += element;
+	}
+
+	return result;
+}
