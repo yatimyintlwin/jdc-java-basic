@@ -35,3 +35,25 @@ int sumWithEach(int ... array) {
 
 	return result;
 }
+
+// Home work
+int average(int ... array) {
+
+	var sum = 0;
+	var result = 0;
+
+	for(var element : array) {
+		sum += element;
+		System.out.println("Sum is %d".formatted(sum));
+	}
+
+	result = sum / array.length;
+	System.out.println("Result is %d".formatted(result));
+
+	return result;
+}
+
+boolean isPrimeNumber(int value) {
+
+	return 0;
+}
