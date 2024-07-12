@@ -20,12 +20,12 @@ String getDayType(Days day) {
 void demo(Days day) {
 
 	switch(day) {
-	case MON, TUE, WED, THU, FRI -> {
-		System.out.println("Week Day");
-	default:
-		System.out.println("Week End");
-		break;		
-	}
+		case MON, TUE, WED, THU, FRI -> {
+			System.out.println("Week Day");
+		default:
+			System.out.println("Week End");
+			break;		
+		}
 
 	}
 

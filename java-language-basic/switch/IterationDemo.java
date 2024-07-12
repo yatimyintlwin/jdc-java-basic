@@ -52,8 +52,3 @@ int average(int ... array) {
 
 	return result;
 }
-
-boolean isPrimeNumber(int value) {
-
-	return 0;
-}
